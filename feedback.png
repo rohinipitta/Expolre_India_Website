@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+.fc{
+background-color:black;
+width:70px;
+height:120px;
+
+
+}
+<div class="fc">
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+</head>
+<style>
+body {
+    background-color:#51d0de;
+
+
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.t
+{
+position:absolute;
+top:160px;
+right:990px;
+font-size:30px;
+font-weight: bold;
+color: #bf4aa8;
+}
+  .rating {
+    display: inline-block;
+    font-size: 0;
+    position:absolute;
+top:170px;
+right:700px;
+    text-transform: capitalize;
+    padding: 0 50px 8%;
+    color: black;
+  }
+.sbt
+{
+position:absolute;
+top:250px;
+right:750px;
+
+}
+.f
+{
+position:absolute;
+top:-20px;
+right:500px;
+font-size:50px;
+
+}
+
+{
+background-color:#f9c5bd;
+
+position: absolute;
+right:30px;
+top:80px;
+}
+    
+  label {
+    float: right;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+  }   
+  label::before {
+    content: "\2606";
+    
+    display: inline-block;
+    transition: 0.2s;
+  } 
+  span {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: 0.15s ease-out;
+    pointer-events: none;
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+  } 
+  label:hover span {
+position:absolute;
+top:-10px;
+    
+    transform: none;
+    letter-spacing: 0;
+  }
+  input:checked ~ label::before {
+    content: "\2605";
+    color: orange;
+    filter: drop-shadow(0 0 4px);
+    transform: rotate(.2turn);
+    transition-delay: calc(0.1 * attr(data-idx integer));
+  }
+ul
+{
+ list-style-type: none;
+  margin:0;
+  padding:2px;
+  overflow: hidden;
+ background-color:#7DA2A9;
+    border: 2px solid #F7F7F7;
+
+  }
+
+</style>
+<body>  
+
+<div class="f"><p>FEEDBACK</p></div>
+<div class="t"><p>Give your Rating  here</p></div>
+
+ <form>
+   <div class="rating">
+     <input type='radio' hidden name='rate' id='rating-opt5' data-idx='0'>	
+     <label for='rating-opt5'><span>Very satisfied</span></label>
+
+     <input type='radio' hidden name='rate' id='rating-opt4' data-idx='1'>
+     <label for='rating-opt4'><span>Somewhat satisfied</span></label>
+
+     <input type='radio' hidden name='rate' id='rating-opt3' data-idx='2'>
+     <label for='rating-opt3'><span>Neutral</span></label>
+
+     <input type='radio' hidden name='rate' id='rating-opt2' data-idx='3'>
+     <label for='rating-opt2'><span>Dissatisfied</span></label>
+
+     <input type='radio' hidden name='rate' id='rating-opt1' data-idx='4'>
+     <label for='rating-opt1'><span>Very Dissatisfied</span></label>
+   </div>
+</form>
+
+
+<div class="sbt">
+<form action="thankyou.html">
+ 
+  <textarea id="w3review" name="w3review" rows="4" cols="50">At Our toursim website. you will know varous toursim places  you may not known.</textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+</body>
+</html>

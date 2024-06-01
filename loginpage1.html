@@ -1,0 +1,57 @@
+<html>
+<title>loginpage</title>
+<heaad>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arapey&family=Lato:ital@0;1&family=Lora:ital,wght@1,700&family=Montserrat&family=Open+Sans&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arapey&family=Bebas+Neue&family=Cinzel:wght@500&family=Dancing+Script:wght@700&family=Fredoka+One&family=Lato:ital@0;1&family=Lora:ital,wght@1,700&family=Montserrat&family=Open+Sans&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,200&family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+background-image:url("lb1.jpg");
+background-repeat: no-repeat;
+  background-size: 1300px 600px;
+
+
+
+}
+.rk-form{
+        max-width: 400px;
+        min-height: 400px;
+        box-sizing: border-box;
+        background-color:black;
+        box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        margin:  20px auto 0 auto;
+        padding: 25px;
+        color: white;
+font-family: 'Montserrat', sans-serif;
+}
+.em-input
+{
+
+ display: block;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%; 
+        margin: 14px auto;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        
+}
+
+</style>
+<body>
+<h1 style="color:#A0AECD; font-family: 'Fredoka One', cursive"><center><b>login to your account<b></br></center></style></h1>
+<form class="rk-form" action="ver1.html" method="get" >
+ email id:<input type="email" class="em-input" name="username"><br/>
+<br>create password:<input type="password" maxlength="8" class="em-input"  name="cw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></br>
+<br>confirm password<input type="password" class="em-input"  maxlength="8" name="cw"></br>
+<input type="submit"  value="login"><br/>
+
+</form>
+
+</body>
+</html>

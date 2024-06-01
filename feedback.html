@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<head>
+</head>
+<style>
+.fc{
+
+width:1250px;
+height:560px;
+margin-left:-10px;
+background-color:black;
+margin-top:-10px;
+
+}
+.fd
+{ 
+border: 3px solid black;
+position: absolute;
+background-color:#B1DDF1;
+border-radius:15px 50px;
+width:950px;
+height:480px;
+margin-left:100px;
+padding-top:40px;
+top:-1px;
+padding-bottom:29px;
+}
+
+		
+		.rating{
+		border: 3px solid #7211f1;
+            border-radius: 15px 50px;
+		padding-left:20px;
+		padding-top:10px;
+		width:700px;
+		height:125px;
+		background-color:white;
+		margin-left:20px;
+		margin-top:-2px;
+		 font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+            font-size: 15px;
+            color:black;
+		
+		}
+	.opinion
+	
+	{
+	
+	border: 3px solid #008b8b;
+             border-radius: 15px 50px;
+		padding-left:50px;
+		padding-top:10px;
+		width:670px;
+		height:100px;
+		background-color:white;
+		margin-left:20px;
+		margin-top:-18px;
+		 font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight:1000;
+            font-style: normal;
+            font-size: 15px;
+            color:black;
+		}
+input[type="text"] {
+            width: 700px;
+			padding-bottom:50px;
+			margin-top:-20px;
+			height:110px;
+		padding-left:20px;
+		   margin-left:20px;
+            
+            border: 3px solid #008b8b;
+             border-radius: 15px 50px;
+            font-size: 14px;
+            outline: none; /* Removes the default focus outline */9
+        }
+		input[type="email"] {
+            width: 280px;
+			margin-top:8px;
+			margin-left:20px;
+		 border-radius:10px;
+            height:40px;
+            border: 3px solid #008b8b;
+            
+            font-size: 14px;
+            outline: none; /* Removes the default focus outline */
+			 font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 2;
+            font-style: normal;
+            font-size: 20px;
+            color:black;
+        }
+		
+		
+		 input[type="submit"] {
+		 margin-left:20px;
+		 margin-top:5px;
+            width: 130px;
+			 border-radius: 15px 50px;
+            top:70px;
+            height:35px;
+            border: 0px solid black;
+          
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+            background-color: #e04050; /* Green background color */
+            color: white; /* White text color */
+            cursor: pointer; /* Add a pointer cursor on hover */
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+			
+			
+        }
+		
+input[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+	.sb
+	
+	{
+	width:150px;
+	
+	height:35px;
+	margin-left:770px;
+	margin-top:-36px;
+	
+	}
+	.cr
+	
+	{
+	
+	
+	 border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 130px;
+  height: 190px; 
+  position: absolute;
+  margin-left:770px;
+ padding-top:150px;
+	padding-bottom:150px;
+	top:5px;
+	 font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 2;
+            font-style: normal;
+            font-size: 20px;
+            color:black;
+	
+	}
+	.e
+	{
+	width:300px
+	height:15px;
+	
+	margin-top:-23px;
+	
+	}
+	
+	 ::-webkit-input-placeholder {
+    padding-left:10px;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+::-webkit-input-placeholder {
+    padding-left: 10px;
+	top:10px;
+	
+    color: black !important; /* Add !important to ensure it overrides default browser style */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+		
+		
+	
+	
+</style>
+<div class="fc">
+
+<div class="fd">
+<div class="cr">
+<p>Wr are always looking for ways to improve your experience</p>
+<p>Please take a moment to evaluate and tell us what you think.</p>
+</div>
+<form action="feedback.php" method="post">
+<div class="e">
+<input type="email" placeholder="Email" name="email"></br></br>
+</div>
+<div class="rating">
+   <label for="rating">Please give Rating</label></br>
+<label for="1"><input type="radio" name="rating" value="1" id="1"/>1</label></br>
+<label for="2"><input type="radio" name="rating" value="2" id="2"/>2</label></br>
+<label for="3"><input type="radio" name="rating" value="3" id="3"/>3</label></br>
+<label for="4"><input type="radio" name="rating" value="4" id="4"/>4</label></br>
+<label for="5"><input type="radio" name="rating" value="5" id="5"/>5</label>
+</div>
+</br></br>
+<div class="opinion">
+ <label for="opinion">Please give your Opinion</label>
+ </br>
+                
+<label for="poor"><input type="radio" name="opinion" value="poor" id="poor"/>Poor</label></br>
+<label for="average"><input type="radio" name="opinion" value="average" id="average"/>Average</label></br>
+<label for="good"><input type="radio" name="opinion" value="good" id="good"/>Good</label></br>
+<label for="excellent"><input type="radio" name="opinion" value="excellent" id="excellent"/>Excellent</label>
+</div>
+</br></br>
+
+<input type="text"   placeholder="What can we do to improve your experience" name="feedback" id="feedback" >
+<div class="sb">
+<input type="submit" value="Submit">
+	</div>		
+		  
+			 
+</div>
+<body>
+</body>
+
+</html>

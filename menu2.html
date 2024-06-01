@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#nav
+{
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#nav li
+{
+float:left;
+dispaly:block;
+}
+#nav li a{
+
+ display: block;
+  color: white;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+line-height:35px; 
+color:#ffffff; 
+}
+#nav li li a{
+font-size:80%;
+}
+#nav li:hover {background:#003f20;}
+#nav ul {
+position:absolute;
+padding:0;
+left:0;
+display:none;
+}
+#nav li:hover ul ul {display:none;} 
+#nav li:hover ul {display:block;}
+#nav li li:hover ul {
+display:block; 
+margin-left:200px; 
+margin-top:-35px; 
+}
+</style>
+</head>
+<body>
+
+<ul id=nav>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">NORTH INDIA</a>
+<ul>
+<li><a href="#">up</a></li>
+<li><a href="#">hp</a></li>
+<li><a href="#"har</a>
+</ul>
+ </li>
+  <li><a href="#contact">SOUTH INDIA</a></li>
+  <li><a href="#about">WEST/CENTERAL INDIA</a></li>
+<li><a href="#about">FEEDBACK</a></li>
+<li><a href="#about">LOG OUT</a></li>
+</ul>
+
+</body>
+</html>
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resized Embedded Video Example</title>
+    <style>
+	body{
+	background-color:black;
+	
+	
+	}
+        /* CSS to resize the embedded video */
+        .video-container {
+            width: 28%; /* Adjust the width as needed */
+            height:auto; /* Maintain aspect ratio */
+			 border: 2px solid white;
+			 border-radius:40px;
+        }
+		.ac{
+		width:450px;
+		height:250px;
+		background-color:white;
+		float:right;
+		margin-top:-600px;
+		margin-right:200px;
+		padding-left:70px;
+		  border: 5px solid gray;
+            border-radius: 10px;
+				
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+		}
+		
+		
+		
+		 input[type="submit"] {
+            width: 250px;
+            margin-top: 10px;
+			margin-left:30px;
+            height:35px;
+            border: 0px solid black;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+            background-color: #e04050; /* Green background color */
+            color: white; /* White text color */
+            cursor: pointer; /* Add a pointer cursor on hover */
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+			
+			
+        }
+		
+input[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+       <iframe src="https://assets.pinterest.com/ext/embed.html?id=1096626577997124084" height="713" width="345" frameborder="0" scrolling="no" ></iframe>
+    </div>
+	<div class="ac">
+	<h1> Account Created Succefully!</h1>
+	<p>Now you can Login </p>
+	<a href="login.html"><input type="submit" value="Login"></a>
+	</div>
+	
+</body>
+</html>
