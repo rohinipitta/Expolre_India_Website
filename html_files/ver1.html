@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-image: url("m2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+        }
+
+        .h {
+            width: 100%;
+            height: 60px;
+            background-color: #B1DDF1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        #nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #nav li {
+            position: relative;
+            background: black; /* menu background color */
+            margin: 3px 10px;
+        }
+
+        #nav li a {
+            display: block;
+            padding: 0 10px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+            line-height: 36px; /* height of the menu items */
+            color: #F7F7F7; /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%; /* smaller font size for sub menu items */
+        }
+
+        #nav li:hover {
+            background: #A0AECD;
+        } /* highlights current hovered list item and the parent list items when hovering over sub menus */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none; /* hides sublists */
+            background: black;
+        }
+
+        #nav li:hover ul {
+            display: block; /* shows sublist on hover */
+        }
+
+        #nav li li:hover ul {
+            display: block; /* shows sub-sublist on hover */
+            margin-left: 150px; /* width of the parent list item */
+            margin-top: -35px; /* aligns top of sub menu with top of list item */
+        }
+
+        .lg, .sg, .fd {
+            width: 80px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lg img, .sg img, .fd img {
+            width: 35px;
+            height: 40px;
+        }
+
+        .lg a, .sg a, .fd a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lt, .st, .fg {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .h {
+                flex-direction: column;
+                height: auto;
+            }
+
+            #nav {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            #nav li {
+                width: 100%;
+            }
+
+            #nav ul {
+                position: static;
+                width: 100%;
+            }
+
+            #nav li:hover ul {
+                display: none; /* prevent submenus from appearing on hover in mobile */
+            }
+
+            #nav li:focus-within ul {
+                display: block; /* shows sublist on focus for accessibility on mobile */
+            }
+
+            #nav li li:hover ul {
+                margin: 0; /* align sub-submenu */
+            }
+
+            .lg, .sg, .fd {
+                margin: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .lg img, .sg img, .fd img {
+                width: 30px;
+            }
+
+            .lt, .st, .fg {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="h">
+        <ul id="nav">
+            <li><a href="#">NORTH INDIA</a>
+                <ul>
+                    <li><a href="haryana.html">Haryana</a></li>
+                    <li><a href="himachal.html">Himachal Pradesh</a></li>
+                    <li><a href="j&k.html">Jammu & Kashmir</a></li>
+                    <li><a href="punjab.html">Punjab</a></li>
+                    <li><a href="uttarpradesh.html">Uttar Pradesh</a></li>
+                    <li><a href="uttarkhand.html">Uttarakhand</a></li>
+                </ul>
+            </li>
+            <li><a href="#">SOUTH INDIA</a>
+                <ul>
+                    <li><a href="andhrapradesh.html">Andhra Pradesh</a></li>
+                    <li><a href="telangana.html">Telangana</a></li>
+                    <li><a href="kerala.html">Kerala</a></li>
+                    <li><a href="tamilnadu.html">Tamil Nadu</a></li>
+                    <li><a href="karnataka.html">Karnataka</a></li>
+                </ul>
+            </li>
+            <li><a href="#">WEST/CENTRAL INDIA</a>
+                <ul>
+                    <li><a href="goa.html">Goa</a></li>
+                    <li><a href="gujarat.html">Gujarat</a></li>
+                    <li><a href="maharashtra.html">Maharashtra</a></li>
+                    <li><a href="chhattisgarh.html">Chhattisgarh</a></li>
+                    <li><a href="madhyapradesh.html">Madhya Pradesh</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="lg">
+            <a href="mainpage.html"><img src="logout.png" alt="Logout"></a>
+        </div>
+        <div class="sg">
+            <a href="signout.html"><img src="deleteac.png" alt="Signout"></a>
+        </div>
+        <div class="fd">
+            <a href="feedback.html"><img src="feedback1.png" alt="Feedback"></a>
+        </div>
+    </div>
+    <div class="lt">
+        <p>Logout</p>
+    </div>
+    <div class="st">
+        <p>Signout</p>
+    </div>
+    <div class="fg">
+        <p>Feedback</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive User-Interactive Page</title>
+    <style>
+        body {
+            background-color: #E8EBF1; /* User-interactive background color */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .body_back {
+            width: 90%;
+            max-width: 1100px;
+            border-radius: 20px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            margin-top: 20px;
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            color: #050813;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background: #000; /* Background color for the container */
+            padding: 5px;
+            margin: 20px auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px; /* Fixed height for the video */
+            border: none;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 40px;
+            margin: 5px;
+            font-size: 16px;
+            color: white;
+            background-color: #009938;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button-container a:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                height: 300px; /* Reduced height for smaller screens */
+            }
+            .button-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .body_back {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body_back">
+        <div class="header">
+            <h1>Account Created Successfully!</h1>
+            <img src="accont_created.png" alt="Account Created">
+            <p style="color: #009938; font-size:20px;"><b>Now you can Login</b></p>
+        </div>
+
+        <div class="button-container">
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://assets.pinterest.com/ext/embed.html?id=1096626577997124084" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</body>
+</html>
