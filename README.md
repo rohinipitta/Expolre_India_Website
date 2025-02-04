@@ -10,7 +10,6 @@ Welcome to the Explore India Website project! This repository contains the code 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Project Overview
